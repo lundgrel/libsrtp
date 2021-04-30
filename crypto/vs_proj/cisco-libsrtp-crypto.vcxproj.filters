@@ -80,10 +80,18 @@
     <ClCompile Include="..\..\srtp\srtp.c">
       <Filter>srtp</Filter>
     </ClCompile>
+    <ClCompile Include="..\replay\rdb.c">
+      <Filter>replay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\replay\rdbx.c">
+      <Filter>replay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\replay\ut_sim.c">
+      <Filter>replay</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
-    <ClInclude Include="config.h" />
     <ClInclude Include="..\..\include\getopt_s.h">
       <Filter>srtp\include</Filter>
     </ClInclude>

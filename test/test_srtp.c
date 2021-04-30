@@ -43,10 +43,37 @@
  *
  */
 
+#pragma comment(lib, "cisco-libsrtp-crypto.lib")
+#pragma comment(lib, "Ws2_32.lib")
+
 /*
  * libSRTP specific.
  */
 #include "../srtp/srtp.c" // Get access to static functions
+//
+//#include <config.h>
+//
+//#include "srtp_priv.h"
+//#include "crypto_types.h"
+//#include "err.h"
+//#include "alloc.h" /* for srtp_crypto_alloc() */
+//
+//#ifdef GCM
+//#include "aes_gcm.h" /* for AES GCM mode */
+//#endif
+//
+//#ifdef OPENSSL_KDF
+//#include <openssl/kdf.h>
+//#include "aes_icm_ext.h"
+//#endif
+//
+//#include <limits.h>
+//#ifdef HAVE_NETINET_IN_H
+//#include <netinet/in.h>
+//#elif defined(HAVE_WINSOCK2_H)
+//#include <winsock2.h>
+//#endif
+
 
 /*
  * Test specific.
