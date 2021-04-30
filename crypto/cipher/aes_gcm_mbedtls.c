@@ -46,6 +46,7 @@
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
+
 #include <mbedtls/gcm.h>
 #include "aes_gcm.h"
 #include "alloc.h"
@@ -410,3 +411,4 @@ const srtp_cipher_type_t srtp_aes_gcm_256 = {
     &srtp_aes_gcm_256_test_case_0,
     SRTP_AES_GCM_256
 };
+
