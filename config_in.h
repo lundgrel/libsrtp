@@ -4,19 +4,19 @@
 #undef AC_APPLE_UNIVERSAL_BUILD
 
 /* Define if building for a CISC machine (e.g. Intel). */
-#undef CPU_CISC
+#define CPU_CISC
 
 /* Define if building for a RISC machine (assume slow byte access). */
 #undef CPU_RISC
 
 /* Define to enabled debug logging for all mudules. */
-#undef ENABLE_DEBUG_LOGGING
+#define ENABLE_DEBUG_LOGGING
 
 /* Logging statments will be writen to this file. */
 #undef ERR_REPORTING_FILE
 
 /* Define to redirect logging to stdout. */
-#undef ERR_REPORTING_STDOUT
+#define ERR_REPORTING_STDOUT
 
 /* Define this to use AES-GCM. */
 #undef GCM
@@ -28,19 +28,19 @@
 #undef HAVE_BYTESWAP_H
 
 /* Define to 1 if you have the `inet_aton' function. */
-#undef HAVE_INET_ATON
+#define HAVE_INET_ATON 1
 
 /* Define to 1 if the system has the type `int16_t'. */
-#undef HAVE_INT16_T
+#define HAVE_INT16_T 1
 
 /* Define to 1 if the system has the type `int32_t'. */
-#undef HAVE_INT32_T
+#define HAVE_INT32_T 1
 
 /* Define to 1 if the system has the type `int8_t'. */
-#undef HAVE_INT8_T
+#define HAVE_INT8_T 1
 
 /* Define to 1 if you have the <inttypes.h> header file. */
-#undef HAVE_INTTYPES_H
+#define HAVE_INTTYPES_H 1
 
 /* Define to 1 if you have the `dl' library (-ldl). */
 #undef HAVE_LIBDL
@@ -52,7 +52,7 @@
 #undef HAVE_LIBNSS3
 
 /* Define to 1 if you have the `socket' library (-lsocket). */
-#undef HAVE_LIBSOCKET
+#define HAVE_LIBSOCKET 1
 
 /* Define to 1 if you have the `z' library (-lz). */
 #undef HAVE_LIBZ
@@ -61,7 +61,7 @@
 #undef HAVE_MACHINE_TYPES_H
 
 /* Define to 1 if you have the <memory.h> header file. */
-#undef HAVE_MEMORY_H
+#define HAVE_MEMORY_H 1
 
 /* Define to 1 if you have the <netinet/in.h> header file. */
 #undef HAVE_NETINET_IN_H
@@ -76,22 +76,22 @@
 #undef HAVE_SIGACTION
 
 /* Define to 1 if you have the `socket' function. */
-#undef HAVE_SOCKET
+#define HAVE_SOCKET 1
 
 /* Define to 1 if you have the <stdint.h> header file. */
-#undef HAVE_STDINT_H
+#define HAVE_STDINT_H 1
 
 /* Define to 1 if you have the <stdlib.h> header file. */
-#undef HAVE_STDLIB_H
+#define HAVE_STDLIB_H 1
 
 /* Define to 1 if you have the <strings.h> header file. */
 #undef HAVE_STRINGS_H
 
 /* Define to 1 if you have the <string.h> header file. */
-#undef HAVE_STRING_H
+#define HAVE_STRING_H 1
 
 /* Define to 1 if you have the <sys/int_types.h> header file. */
-#undef HAVE_SYS_INT_TYPES_H
+#undef HAVE_SYS_INT_TYPES_H 
 
 /* Define to 1 if you have the <sys/socket.h> header file. */
 #undef HAVE_SYS_SOCKET_H
@@ -106,28 +106,28 @@
 #undef HAVE_SYS_UIO_H
 
 /* Define to 1 if the system has the type `uint16_t'. */
-#undef HAVE_UINT16_T
+#define HAVE_UINT16_T 1
 
 /* Define to 1 if the system has the type `uint32_t'. */
-#undef HAVE_UINT32_T
+#define HAVE_UINT32_T 1
 
 /* Define to 1 if the system has the type `uint64_t'. */
-#undef HAVE_UINT64_T
+#define HAVE_UINT64_T 1
 
 /* Define to 1 if the system has the type `uint8_t'. */
-#undef HAVE_UINT8_T
+#define HAVE_UINT8_T 1
 
 /* Define to 1 if you have the <unistd.h> header file. */
-#undef HAVE_UNISTD_H
+#define HAVE_UNISTD_H 1
 
 /* Define to 1 if you have the `usleep' function. */
 #undef HAVE_USLEEP
 
 /* Define to 1 if you have the <windows.h> header file. */
-#undef HAVE_WINDOWS_H
+#define HAVE_WINDOWS_H 1
 
 /* Define to 1 if you have the <winsock2.h> header file. */
-#undef HAVE_WINSOCK2_H
+#define HAVE_WINSOCK2_H 1
 
 /* Define to use X86 inlined assembly code */
 #undef HAVE_X86

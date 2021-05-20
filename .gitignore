@@ -16,6 +16,7 @@ old?
 *.so
 *.so.*
 *.dylib
+*.obj
 
 # Executables
 *.exe
@@ -61,6 +62,8 @@ test/test_srtp
 */**/bin/x86
 */**/bin/x64
 */**/obj
+*/**/Debug
+*/**/Release
 */**/.vs
 */**/*.v12.suo
 *.pdf
