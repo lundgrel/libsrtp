@@ -46,6 +46,7 @@
 #define CRYPTO_ALLOC_H
 
 #include "datatypes.h"
+#include "dll_spec.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -59,6 +60,7 @@ extern "C" {
  *
  * returns pointer to memory on success or else NULL
  */
+API_METHOD
 void *srtp_crypto_alloc(size_t size);
 
 /*
@@ -67,6 +69,9 @@ void *srtp_crypto_alloc(size_t size);
  * Frees the block of memory  ptr previously  allocated with
  * srtp_crypto_alloc
  */
+
+
+API_METHOD
 void srtp_crypto_free(void *ptr);
 
 #ifdef __cplusplus

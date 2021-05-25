@@ -48,6 +48,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include "srtp.h"
+#include "dll_spec.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -77,12 +78,13 @@ typedef enum {
  * ERR_REPORTING_STDOUT is defined, it will log to stdout.
  *
  */
-
+API_METHOD
 srtp_err_status_t srtp_err_reporting_init(void);
 
 typedef void(srtp_err_report_handler_func_t)(srtp_err_reporting_level_t level,
                                              const char *msg);
 
+API_METHOD
 srtp_err_status_t srtp_install_err_report_handler(
     srtp_err_report_handler_func_t func);
 
@@ -95,7 +97,7 @@ srtp_err_status_t srtp_install_err_report_handler(
  * is defined.
  *
  */
-
+API_METHOD
 void srtp_err_report(srtp_err_reporting_level_t level, const char *format, ...);
 
 /*

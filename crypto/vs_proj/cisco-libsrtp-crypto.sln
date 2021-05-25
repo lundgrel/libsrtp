@@ -7,30 +7,66 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cisco-libsrtp-crypto", "cis
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_srtp", "..\..\test\test_srtp\test_srtp.vcxproj", "{361CC522-ED4A-4AE0-999A-13450BE241AC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dll", "..\dll\dll.vcxproj", "{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_DLL|x64 = Debug_DLL|x64
+		Debug_DLL|x86 = Debug_DLL|x86
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release_DLL|x64 = Release_DLL|x64
+		Release_DLL|x86 = Release_DLL|x86
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB6264FC-9AFB-4A55-937B-0CB757501B8A}.Debug_DLL|x64.ActiveCfg = Debug_DLL|x64
+		{BB6264FC-9AFB-4A55-937B-0CB757501B8A}.Debug_DLL|x64.Build.0 = Debug_DLL|x64
+		{BB6264FC-9AFB-4A55-937B-0CB757501B8A}.Debug_DLL|x86.ActiveCfg = Debug_DLL|Win32
+		{BB6264FC-9AFB-4A55-937B-0CB757501B8A}.Debug_DLL|x86.Build.0 = Debug_DLL|Win32
 		{BB6264FC-9AFB-4A55-937B-0CB757501B8A}.Debug|x64.ActiveCfg = Debug|x64
 		{BB6264FC-9AFB-4A55-937B-0CB757501B8A}.Debug|x64.Build.0 = Debug|x64
 		{BB6264FC-9AFB-4A55-937B-0CB757501B8A}.Debug|x86.ActiveCfg = Debug|Win32
 		{BB6264FC-9AFB-4A55-937B-0CB757501B8A}.Debug|x86.Build.0 = Debug|Win32
+		{BB6264FC-9AFB-4A55-937B-0CB757501B8A}.Release_DLL|x64.ActiveCfg = Release_DLL|x64
+		{BB6264FC-9AFB-4A55-937B-0CB757501B8A}.Release_DLL|x64.Build.0 = Release_DLL|x64
+		{BB6264FC-9AFB-4A55-937B-0CB757501B8A}.Release_DLL|x86.ActiveCfg = Release_DLL|Win32
+		{BB6264FC-9AFB-4A55-937B-0CB757501B8A}.Release_DLL|x86.Build.0 = Release_DLL|Win32
 		{BB6264FC-9AFB-4A55-937B-0CB757501B8A}.Release|x64.ActiveCfg = Release|x64
 		{BB6264FC-9AFB-4A55-937B-0CB757501B8A}.Release|x64.Build.0 = Release|x64
 		{BB6264FC-9AFB-4A55-937B-0CB757501B8A}.Release|x86.ActiveCfg = Release|Win32
 		{BB6264FC-9AFB-4A55-937B-0CB757501B8A}.Release|x86.Build.0 = Release|Win32
+		{361CC522-ED4A-4AE0-999A-13450BE241AC}.Debug_DLL|x64.ActiveCfg = Debug|x64
+		{361CC522-ED4A-4AE0-999A-13450BE241AC}.Debug_DLL|x86.ActiveCfg = Debug|Win32
+		{361CC522-ED4A-4AE0-999A-13450BE241AC}.Debug_DLL|x86.Build.0 = Debug|Win32
 		{361CC522-ED4A-4AE0-999A-13450BE241AC}.Debug|x64.ActiveCfg = Debug|x64
 		{361CC522-ED4A-4AE0-999A-13450BE241AC}.Debug|x64.Build.0 = Debug|x64
 		{361CC522-ED4A-4AE0-999A-13450BE241AC}.Debug|x86.ActiveCfg = Debug|Win32
 		{361CC522-ED4A-4AE0-999A-13450BE241AC}.Debug|x86.Build.0 = Debug|Win32
+		{361CC522-ED4A-4AE0-999A-13450BE241AC}.Release_DLL|x64.ActiveCfg = Release|x64
+		{361CC522-ED4A-4AE0-999A-13450BE241AC}.Release_DLL|x86.ActiveCfg = Release_DLL|Win32
+		{361CC522-ED4A-4AE0-999A-13450BE241AC}.Release_DLL|x86.Build.0 = Release_DLL|Win32
 		{361CC522-ED4A-4AE0-999A-13450BE241AC}.Release|x64.ActiveCfg = Release|x64
 		{361CC522-ED4A-4AE0-999A-13450BE241AC}.Release|x64.Build.0 = Release|x64
 		{361CC522-ED4A-4AE0-999A-13450BE241AC}.Release|x86.ActiveCfg = Release|Win32
 		{361CC522-ED4A-4AE0-999A-13450BE241AC}.Release|x86.Build.0 = Release|Win32
+		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Debug_DLL|x64.ActiveCfg = Debug|x64
+		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Debug_DLL|x64.Build.0 = Debug|x64
+		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Debug_DLL|x86.ActiveCfg = Debug|Win32
+		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Debug_DLL|x86.Build.0 = Debug|Win32
+		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Debug|x64.ActiveCfg = Debug|x64
+		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Debug|x64.Build.0 = Debug|x64
+		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Debug|x86.ActiveCfg = Debug|Win32
+		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Debug|x86.Build.0 = Debug|Win32
+		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Release_DLL|x64.ActiveCfg = Release|x64
+		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Release_DLL|x64.Build.0 = Release|x64
+		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Release_DLL|x86.ActiveCfg = Release|Win32
+		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Release_DLL|x86.Build.0 = Release|Win32
+		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Release|x64.ActiveCfg = Release|x64
+		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Release|x64.Build.0 = Release|x64
+		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Release|x86.ActiveCfg = Release|Win32
+		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

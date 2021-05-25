@@ -60,14 +60,18 @@ typedef enum {
     srtp_key_event_hard_limit
 } srtp_key_event_t;
 
+API_METHOD
 srtp_err_status_t srtp_key_limit_set(srtp_key_limit_t key,
                                      const srtp_xtd_seq_num_t s);
 
+API_METHOD
 srtp_err_status_t srtp_key_limit_clone(srtp_key_limit_t original,
                                        srtp_key_limit_t *new_key);
 
+API_METHOD
 srtp_err_status_t srtp_key_limit_check(const srtp_key_limit_t key);
 
+API_METHOD
 srtp_key_event_t srtp_key_limit_update(srtp_key_limit_t key);
 
 typedef enum {

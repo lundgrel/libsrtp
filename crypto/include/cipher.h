@@ -47,6 +47,7 @@
 
 #include "srtp.h"
 #include "crypto_types.h" /* for values of cipher_type_id_t */
+#include "dll_spec.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -215,6 +216,7 @@ srtp_err_status_t srtp_cipher_init(srtp_cipher_t *c, const uint8_t *key);
 srtp_err_status_t srtp_cipher_set_iv(srtp_cipher_t *c,
                                      uint8_t *iv,
                                      int direction);
+API_METHOD
 srtp_err_status_t srtp_cipher_output(srtp_cipher_t *c,
                                      uint8_t *buffer,
                                      uint32_t *num_octets_to_output);

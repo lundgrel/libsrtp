@@ -121,6 +121,7 @@ typedef struct {
  * If any value other than srtp_err_status_ok is returned, the
  * crypto_kernel MUST NOT be used.
  */
+API_METHOD
 srtp_err_status_t srtp_crypto_kernel_init(void);
 
 /*
@@ -133,6 +134,7 @@ srtp_err_status_t srtp_crypto_kernel_init(void);
  *    <other>                shutdown failure
  *
  */
+API_METHOD
 srtp_err_status_t srtp_crypto_kernel_shutdown(void);
 
 /*
@@ -144,25 +146,30 @@ srtp_err_status_t srtp_crypto_kernel_shutdown(void);
  *    <other>                a test failed
  *
  */
+API_METHOD
 srtp_err_status_t srtp_crypto_kernel_status(void);
 
 /*
  * srtp_crypto_kernel_list_debug_modules() outputs a list of debugging modules
  *
  */
+API_METHOD
 srtp_err_status_t srtp_crypto_kernel_list_debug_modules(void);
 
 /*
  * srtp_crypto_kernel_load_cipher_type()
  *
  */
+API_METHOD
 srtp_err_status_t srtp_crypto_kernel_load_cipher_type(
     const srtp_cipher_type_t *ct,
     srtp_cipher_type_id_t id);
 
+API_METHOD
 srtp_err_status_t srtp_crypto_kernel_load_auth_type(const srtp_auth_type_t *ct,
                                                     srtp_auth_type_id_t id);
 
+API_METHOD
 srtp_err_status_t srtp_crypto_kernel_load_debug_module(
     srtp_debug_module_t *new_dm);
 
@@ -176,6 +183,7 @@ srtp_err_status_t srtp_crypto_kernel_load_debug_module(
  *    srtp_err_status_alloc_fail   an allocation failure occured
  *    srtp_err_status_fail         couldn't find cipher with identifier 'id'
  */
+API_METHOD
 srtp_err_status_t srtp_crypto_kernel_alloc_cipher(srtp_cipher_type_id_t id,
                                                   srtp_cipher_pointer_t *cp,
                                                   int key_len,
@@ -192,6 +200,7 @@ srtp_err_status_t srtp_crypto_kernel_alloc_cipher(srtp_cipher_type_id_t id,
  *    srtp_err_status_alloc_fail   an allocation failure occured
  *    srtp_err_status_fail         couldn't find auth with identifier 'id'
  */
+API_METHOD
 srtp_err_status_t srtp_crypto_kernel_alloc_auth(srtp_auth_type_id_t id,
                                                 srtp_auth_pointer_t *ap,
                                                 int key_len,
@@ -205,6 +214,7 @@ srtp_err_status_t srtp_crypto_kernel_alloc_auth(srtp_auth_type_id_t id,
  *
  * returns srtp_err_status_ok on success, srtp_err_status_fail otherwise
  */
+API_METHOD
 srtp_err_status_t srtp_crypto_kernel_set_debug_module(const char *mod_name,
                                                       int v);
 

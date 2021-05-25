@@ -116,6 +116,7 @@ srtp_err_status_t srtp_rdb_increment(srtp_rdb_t *rdb);
 /*
  * srtp_rdb_get_value(db) returns the current sequence number of db
  */
+API_METHOD
 uint32_t srtp_rdb_get_value(const srtp_rdb_t *rdb);
 
 #ifdef __cplusplus

@@ -48,6 +48,7 @@
 
 #include "integers.h" /* definitions of uint32_t, et cetera   */
 #include "alloc.h"
+#include "dll_spec.h"
 
 #include <stdarg.h>
 
@@ -374,5 +375,7 @@ char *bitvector_bit_string(bitvector_t *x, char *buf, int len);
 #ifdef __cplusplus
 }
 #endif
+
+
 
 #endif /* DATATYPES_H */

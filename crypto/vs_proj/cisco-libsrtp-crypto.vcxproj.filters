@@ -164,6 +164,9 @@
     <ClInclude Include="..\include\stat.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\dll_spec.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="cipher">

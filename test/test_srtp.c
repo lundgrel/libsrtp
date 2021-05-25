@@ -43,7 +43,6 @@
  *
  */
 
-#pragma comment(lib, "cisco-libsrtp-crypto.lib")
 #pragma comment(lib, "Ws2_32.lib")
 
 /*
