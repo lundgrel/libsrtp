@@ -12,4 +12,4 @@
 
 
 
-#endif __DLL_SPEC_H
+#endif /*__DLL_SPEC_H */
