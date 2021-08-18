@@ -69,6 +69,8 @@
 #include "rtp_decoder.h"
 #include "util.h"
 
+#pragma warning(disable : 4018)
+
 #ifndef timersub
 #define timersub(a, b, result)                                                 \
     do {                                                                       \

@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cisco-libsrtp-crypto", "cis
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dll", "..\dll\dll.vcxproj", "{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rtp_decoder", "..\rtp_decoder_vsproj\rtp_decoder.vcxproj", "{828E8D97-7B39-42B9-A880-118336CA383F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug_DLL|win32 = Debug_DLL|win32
@@ -50,6 +52,22 @@ Global
 		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Release|win32.ActiveCfg = Release|Win32
 		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Release|x64.ActiveCfg = Release|x64
 		{B4BD7EDD-B56F-443E-BB24-2650FD0C1EAF}.Release|x64.Build.0 = Release|x64
+		{828E8D97-7B39-42B9-A880-118336CA383F}.Debug_DLL|win32.ActiveCfg = Debug|Win32
+		{828E8D97-7B39-42B9-A880-118336CA383F}.Debug_DLL|win32.Build.0 = Debug|Win32
+		{828E8D97-7B39-42B9-A880-118336CA383F}.Debug_DLL|x64.ActiveCfg = Debug|x64
+		{828E8D97-7B39-42B9-A880-118336CA383F}.Debug_DLL|x64.Build.0 = Debug|x64
+		{828E8D97-7B39-42B9-A880-118336CA383F}.Debug|win32.ActiveCfg = Debug|Win32
+		{828E8D97-7B39-42B9-A880-118336CA383F}.Debug|win32.Build.0 = Debug|Win32
+		{828E8D97-7B39-42B9-A880-118336CA383F}.Debug|x64.ActiveCfg = Debug|x64
+		{828E8D97-7B39-42B9-A880-118336CA383F}.Debug|x64.Build.0 = Debug|x64
+		{828E8D97-7B39-42B9-A880-118336CA383F}.Release_DLL|win32.ActiveCfg = Release|Win32
+		{828E8D97-7B39-42B9-A880-118336CA383F}.Release_DLL|win32.Build.0 = Release|Win32
+		{828E8D97-7B39-42B9-A880-118336CA383F}.Release_DLL|x64.ActiveCfg = Release|x64
+		{828E8D97-7B39-42B9-A880-118336CA383F}.Release_DLL|x64.Build.0 = Release|x64
+		{828E8D97-7B39-42B9-A880-118336CA383F}.Release|win32.ActiveCfg = Release|Win32
+		{828E8D97-7B39-42B9-A880-118336CA383F}.Release|win32.Build.0 = Release|Win32
+		{828E8D97-7B39-42B9-A880-118336CA383F}.Release|x64.ActiveCfg = Release|x64
+		{828E8D97-7B39-42B9-A880-118336CA383F}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
