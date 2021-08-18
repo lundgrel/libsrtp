@@ -65,7 +65,9 @@ test/test_srtp
 */**/Debug
 */**/Release
 */**/.vs
+.vs/ # if in root
 */**/*.v12.suo
 *.pdf
 */**/packages
 /crypto/vs_proj/Release_DLL
+*/**/v16
