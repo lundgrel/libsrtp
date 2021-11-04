@@ -1,0 +1,7 @@
+LIBRARY LIBSRTP
+EXPORTS
+	
+   srtp_init	 @1
+   srtp_shutdown @2
+   srtp_protect  @3
+   srtp_unprotect @4

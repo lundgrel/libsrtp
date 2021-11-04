@@ -47,6 +47,8 @@
 
 #include <stdint.h>
 
+#include "dll_spec.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -356,6 +358,7 @@ typedef srtp_ctx_t *srtp_t;
  * @warning This function @b must be called before any other srtp
  * functions.
  */
+API_METHOD
 srtp_err_status_t srtp_init(void);
 
 /**
@@ -363,6 +366,7 @@ srtp_err_status_t srtp_init(void);
  *
  * @warning No srtp functions may be called after calling this function.
  */
+API_METHOD
 srtp_err_status_t srtp_shutdown(void);
 
 /**
@@ -405,6 +409,7 @@ srtp_err_status_t srtp_shutdown(void);
  *    - srtp_err_status_replay_fail   rtp sequence number was non-increasing
  *    - @e other                 failure in cryptographic mechanisms
  */
+API_METHOD
 srtp_err_status_t srtp_protect(srtp_t ctx, void *rtp_hdr, int *len_ptr);
 
 /**
@@ -455,6 +460,7 @@ srtp_err_status_t srtp_protect(srtp_t ctx, void *rtp_hdr, int *len_ptr);
  *    - srtp_err_status_replay_fail   rtp sequence number was non-increasing
  *    - @e other                 failure in cryptographic mechanisms
  */
+API_METHOD
 srtp_err_status_t srtp_protect_mki(srtp_ctx_t *ctx,
                                    void *rtp_hdr,
                                    int *pkt_octet_len,
@@ -501,6 +507,7 @@ srtp_err_status_t srtp_protect_mki(srtp_ctx_t *ctx,
  *    - [other]  if there has been an error in the cryptographic mechanisms.
  *
  */
+API_METHOD
 srtp_err_status_t srtp_unprotect(srtp_t ctx, void *srtp_hdr, int *len_ptr);
 
 /**
@@ -549,6 +556,7 @@ srtp_err_status_t srtp_unprotect(srtp_t ctx, void *srtp_hdr, int *len_ptr);
  *    - [other]  if there has been an error in the cryptographic mechanisms.
  *
  */
+API_METHOD
 srtp_err_status_t srtp_unprotect_mki(srtp_t ctx,
                                      void *srtp_hdr,
                                      int *len_ptr,
@@ -575,6 +583,7 @@ srtp_err_status_t srtp_unprotect_mki(srtp_t ctx,
  *    - srtp_err_status_alloc_fail   if allocation failed.
  *    - srtp_err_status_init_fail    if initialization failed.
  */
+API_METHOD
 srtp_err_status_t srtp_create(srtp_t *session, const srtp_policy_t *policy);
 
 /**
@@ -640,6 +649,7 @@ srtp_err_status_t srtp_remove_stream(srtp_t session, unsigned int ssrc);
  *    - [other]                 otherwise.
  *
  */
+API_METHOD
 srtp_err_status_t srtp_update(srtp_t session, const srtp_policy_t *policy);
 
 /**

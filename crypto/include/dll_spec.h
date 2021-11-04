@@ -2,8 +2,8 @@
 #define __DLL_SPEC_H
 
 
-#if defined(SRTP_DLL__EXPORTS)
-#define API_METHOD __declspec(dllexport)
+#if defined(SRTP_DLL_EXPORTS)
+#define API_METHOD __declspec(dllexport) 
 #elif defined(SRTP_DLL_IMPORT)
 #define API_METHOD __declspec(dllimport)
 #else

@@ -2721,6 +2721,7 @@ srtp_err_status_t srtp_unprotect_mki(srtp_ctx_t *ctx,
     return srtp_err_status_ok;
 }
 
+API_METHOD
 srtp_err_status_t srtp_init()
 {
     srtp_err_status_t status;

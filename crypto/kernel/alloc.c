@@ -67,6 +67,7 @@ srtp_debug_module_t srtp_mod_alloc = {
 
 #if defined(HAVE_STDLIB_H)
 
+API_METHOD
 void *srtp_crypto_alloc(size_t size)
 {
     void *ptr;
