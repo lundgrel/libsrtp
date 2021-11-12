@@ -71,3 +71,6 @@ test/test_srtp
 */**/packages
 /crypto/vs_proj/Release_DLL
 */**/v16
+
+/Release
+/Release_DLL
