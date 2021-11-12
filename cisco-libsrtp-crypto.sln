@@ -65,7 +65,6 @@ Global
 		{828E8D97-7B39-42B9-A880-118336CA383F}.Release_DLL|x64.ActiveCfg = Release|x64
 		{828E8D97-7B39-42B9-A880-118336CA383F}.Release_DLL|x64.Build.0 = Release|x64
 		{828E8D97-7B39-42B9-A880-118336CA383F}.Release|win32.ActiveCfg = Release|Win32
-		{828E8D97-7B39-42B9-A880-118336CA383F}.Release|win32.Build.0 = Release|Win32
 		{828E8D97-7B39-42B9-A880-118336CA383F}.Release|x64.ActiveCfg = Release|x64
 		{828E8D97-7B39-42B9-A880-118336CA383F}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
