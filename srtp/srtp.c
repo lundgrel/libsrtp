@@ -44,6 +44,7 @@
 
 // Leave this as the top level import. Ensures the existence of defines
 #include <config.h>
+#include "datatypes.h"
 
 #include "srtp_priv.h"
 #include "crypto_types.h"
