@@ -46,6 +46,9 @@
 #ifndef DATATYPES_H
 #define DATATYPES_H
 
+#pragma message("Including " __FILE__)
+
+
 #include "integers.h" /* definitions of uint32_t, et cetera   */
 #include "alloc.h"
 #include "dll_spec.h"

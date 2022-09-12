@@ -1,6 +1,12 @@
 /* crypto/include/config.h.  Generated from config_in.h by configure.  */
 /* config_in.h.  Generated from configure.ac by autoheader.  */
 
+
+#pragma once
+
+#pragma message("Including " __FILE__ )
+
+
 /* Define if building universal (internal helper macro) */
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
 
