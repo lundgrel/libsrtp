@@ -2470,8 +2470,11 @@ srtp_err_status_t srtp_unprotect_mki(srtp_ctx_t *ctx,
 
         if (session_keys == NULL)
             return srtp_err_status_bad_mki;
-    } else {
+    } else if ( stream != NULL ) {
         session_keys = &stream->session_keys[0];
+    } else {
+        debug_print(mod_srtp, "No stream when trying to unprotect u_packet index: %016" PRIx64, est);
+        return srtp_err_status_auth_fail;
     }
 
     /*
